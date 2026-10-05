@@ -1,0 +1,20 @@
+{
+  "name": "pinote-backend",
+  "version": "1.0.0",
+  "description": "pinote-database backend",
+  "homepage": "https://github.com/Sarthak-0108/pinote-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Sarthak-0108/pinote-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarthak-0108/pinote-backend.git"
+  },
+  "license": "ISC",
+  "author": "Sarthak Kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
