@@ -26,9 +26,12 @@ const registerUser = async (req, res) => {
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 
+    const isProduction = process.env.NODE_ENV === 'production'
+
     res.cookie("token", token, {
-        secure: true,
-        sameSite: "none",
+        httpOnly: true,
+        secure: isProduction,
+        sameSite: isProduction ? "none" : "lax",
         path: "/",
         maxAge: 7 * 24 * 60 * 60 * 1000
     });
